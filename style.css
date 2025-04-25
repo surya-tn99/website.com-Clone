@@ -1,0 +1,76 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+:root{
+    --common-margin :  2.7rem;
+}
+#header{
+    font-family: "Nunito Sans",sans-serif;
+    position: relative;
+    background-color: white;
+    margin:  var(--common-margin);
+    margin-bottom: 1.4rem;
+}
+#header #page-name{
+    width: 175px;
+    height: 30px;
+}
+#header li{
+    list-style: none;
+    display:inline;
+    margin-right: 1rem;
+}
+#header-menu1{
+    text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    font-size: small;
+    font-weight: 750;
+}
+#header-menu1 #sign-up{
+    color: white;
+    background-color: red;
+    padding: 10px 20px;
+    font-size:medium;
+}
+#header-menu1 li:hover{
+    cursor: pointer;
+    color: blue;
+}
+#header-menu1 #sign-up:hover{
+    cursor: pointer;
+    color: black;
+}
+#header-menu2{
+    text-transform:uppercase;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-weight: 650;
+}
+#header-menu2 li{
+    margin-right: 20px;
+}
+#header-menu2-drop-list img{
+    rotate: 90deg;
+    position: relative;
+    top: 12px;
+    size:1rem;
+}
+#header-menu2-drop-list:hover img{
+    rotate: -90deg;
+}
+#header-menu2-drop-list:hover{
+    color: blue;
+}
+
+
+/* end of header*/
+
+#temp-2-create{
+    height: 500px;
+    width: max;
+    background-color: skyblue;
+}

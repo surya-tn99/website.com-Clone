@@ -1,12 +1,12 @@
 *{
     padding: 0%;
     margin: 0%;
+    font-family: "Nunito Sans",sans-serif;
 }
 :root{
     --common-margin :  2.7rem;
 }
 #header{
-    font-family: "Nunito Sans",sans-serif;
     position: relative;
     background-color: white;
     margin:  var(--common-margin);
@@ -65,12 +65,35 @@
 #header-menu2-drop-list:hover{
     color: blue;
 }
-
-
 /* end of header*/
 
-#temp-2-create{
-    height: 500px;
-    width: max;
-    background-color: skyblue;
+.section .content{
+    margin: 0 auto;
+}
+#build-it{
+    background-color:#426999;
+}
+#build-it .content{
+    background-color:#3b516b;
+    color: white;    
+    width: 80%;
+    text-align: center;
+    padding: 5rem 0 3rem;
+}
+
+#build-it .title{
+    font-size: 3rem;
+    margin: 0 0 15px;
+}
+#build-it p{
+    font-size: 1.32rem;
+    opacity: 0.9;
+    margin: 0 0 15px;
+}
+#build-it .link a{
+    font-size: 1.35rem;
+    color: white;
+    text-decoration: none;
+    opacity: 0.9;
+    margin: 0 0 10px;
 }

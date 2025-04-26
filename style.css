@@ -65,16 +65,18 @@
 #header-menu2-drop-list:hover{
     color: blue;
 }
+#header-menu2:hover li{
+    cursor: pointer;
+}
 /* end of header*/
 
 .section .content{
     margin: 0 auto;
 }
 #build-it{
-    background-color:#426999;
+    background-color:#3b516b;
 }
 #build-it .content{
-    background-color:#3b516b;
     color: white;    
     width: 80%;
     text-align: center;
@@ -88,7 +90,8 @@
 #build-it p{
     font-size: 1.32rem;
     opacity: 0.9;
-    margin: 0 0 15px;
+    margin: 0 auto 15px;
+    width: 70%;
 }
 #build-it .link a{
     font-size: 1.35rem;
@@ -96,4 +99,14 @@
     text-decoration: none;
     opacity: 0.9;
     margin: 0 0 10px;
+    border-bottom: 1px dotted white;
+}
+#build-it img{
+    width: 1.25rem;
+    height: 1.25rem;
+    position: relative;
+    top: 3px;
+}
+#build-it:hover .link{
+    cursor: pointer;
 }

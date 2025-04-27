@@ -120,7 +120,7 @@
 
 /*end of build it*/
 #faqs .content{
-    margin: calc(var(--common-margin)*1.5) calc(var(--common-margin)*3) ;
+    margin: calc(var(--common-margin)*1.5) calc(var(--common-margin)*3) 0;
 }
 #faqs .title{
     font-size: 3rem;
@@ -152,4 +152,53 @@
 }
 .faq .answer li{
     margin: 15px;
+}
+/*end of faqs*/
+
+#free-plan{
+    background-color: #333;
+    color: white;
+}
+#free-plan .content{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;   
+}
+#free-plan h2{
+    width: 70%;
+    margin: 5rem auto 0;
+    font-size: 3rem;
+    line-height: 50px;
+    text-transform: capitalize;
+}
+#free-plan p{
+    width: 95%;
+    font-weight: 600;
+    font-size: large;
+}
+#free-plan p:last-child{
+    margin-bottom: 5rem;
+}
+#free-plan p:last-child a:last-child{
+
+    border-bottom: 1px dotted white;
+}
+#free-plan .button{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    opacity: 1;
+    font-size: small;
+}
+#free-plan a{
+    color: white;
+    text-decoration: none;
+}
+#free-plan a img{
+    position: relative;
+    top: 0.2rem;
+    width: 1rem;
+    height: 1rem;
 }

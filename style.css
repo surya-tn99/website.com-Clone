@@ -52,6 +52,7 @@
 }
 #header-menu2 li{
     margin-right: 20px;
+    transition: 500ms;/*make an look like popup*/
 }
 #header-menu2-drop-list img{
     rotate: 90deg;
@@ -65,8 +66,10 @@
 #header-menu2-drop-list:hover{
     color: blue;
 }
-#header-menu2:hover li{
+#header-menu2 li:hover{
     cursor: pointer;
+    font-size: larger; /*make an look like popup*/
+    color: blue;
 }
 /* end of header*/
 
@@ -101,6 +104,10 @@
     margin: 0 0 10px;
     border-bottom: 1px dotted white;
 }
+#build-it:hover .link a{
+    opacity: 1;
+    font-size: larger;
+}
 #build-it img{
     width: 1.25rem;
     height: 1.25rem;
@@ -109,4 +116,40 @@
 }
 #build-it:hover .link{
     cursor: pointer;
+}
+
+/*end of build it*/
+#faqs .content{
+    margin: calc(var(--common-margin)*1.5) calc(var(--common-margin)*3) ;
+}
+#faqs .title{
+    font-size: 3rem;
+}
+.faq{
+    display: flex;
+    line-height: 1.5rem;
+} 
+.faq .question{
+    padding: 2rem;
+    width: 48%;
+    /* background-color: orange; */
+    font-weight: bold;
+    font-size: large;
+}
+.faq .answer{
+    opacity: 0.7;
+    padding: 2rem;
+    width: 48%;
+    font-size: medium;
+    line-height: 1.4325rem;
+    /* background-color: greenyellow; */
+}
+.faq .answer p{
+    margin: 0px auto 20px;
+}
+.faq .answer ol{
+    padding-left: 20px;
+}
+.faq .answer li{
+    margin: 15px;
 }

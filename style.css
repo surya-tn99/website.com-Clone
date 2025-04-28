@@ -120,7 +120,7 @@
 
 /*end of build it*/
 #faqs .content{
-    margin: calc(var(--common-margin)*1.5) calc(var(--common-margin)*3) 0;
+    margin: calc(var(--common-margin)*1.5) calc(var(--common-margin)*3) ;
 }
 #faqs .title{
     font-size: 3rem;
@@ -203,6 +203,48 @@
     height: 1rem;
 }
 /*end of free-plan*/
+
+#review .content{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    text-align: center;
+}
+#review .content div{
+    
+    padding: var(--common-margin);
+}
+#review .content .review-company{
+    display: flex;
+    justify-content: space-evenly;
+}
+#review .content .review-company img{
+    height: 6rem;
+}
+#review .title{
+    font-size: 3rem;
+    width: 70%;
+    margin: 0 auto;
+    text-transform: capitalize;
+}
+#review .subtitle{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+}
+#review #rating{
+    width: 50%;
+    margin: 0 auto;
+}
+#review .content div:first-child{
+    background-color: #f8f6f6
+}
+#review .content div:last-child{
+    background-color: #e9e9e8;
+}
+
+/*end of review*/
+
 #footer .content{
     display: flex;
     margin: var(--common-margin);
@@ -256,3 +298,5 @@
     cursor: pointer;
     text-decoration: underline;
 } 
+
+/*end of footer*/

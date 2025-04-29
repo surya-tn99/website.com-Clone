@@ -300,3 +300,102 @@
 } 
 
 /*end of footer*/
+#banner{
+    width: 100%;
+    background-color: rgb(236, 242, 245);
+    padding-bottom: var(--common-margin);
+}
+#banner .content .title{
+    text-align: center;
+    margin: 0 auto;
+    padding-top:3rem;
+    padding-bottom: 3rem;
+}
+#banner .content .title p{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+#banner .content .title h2{
+    font-size: 2.95rem;
+    padding-top: 5px;
+}
+#banner .content .title h2 .mainWords{
+    border-bottom: 2px dashed black;   
+}
+
+#banner .content .products{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 calc(var(--common-margin));
+    flex-wrap: wrap;
+}
+#banner .content .product{
+    background-color: white;
+    padding: 1.3rem;
+    border: 4px solid black;
+    gap: 20px;
+    box-shadow: 10px 15px 0px 0px black;
+    min-width: 15%;
+}
+
+
+#banner .content .product .name{
+    display: grid;
+    grid-template-columns: auto auto;
+
+    p:nth-child(1){
+        text-align: left;
+        font-size: 1rem;
+        font-weight: 900;
+    }
+    p:last-child{
+        text-align: right;
+        img{
+            height: 2rem;
+        }
+    }
+
+    .free{
+        color: #807fcd;
+    }
+    .email{
+        color: #009f47;
+    }
+    .domain{
+        color: #ff5900;
+    }
+    .booking{
+        color: #b073ff;
+    }
+    .store{
+        color :#497ec8;
+    }
+}
+
+#banner .content .product .price{
+    margin: 10px auto 40px auto;
+    h2{
+        display: inline;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    p{
+        display: inline;
+        font-weight: 700;
+    }
+}
+
+#banner .content .product .button{
+    padding: 15px 18px;
+    background-color: #266dce;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 850;
+    text-transform: uppercase;
+    border-radius: 5px;
+
+    img{
+        height: 0.8rem;
+    }
+}

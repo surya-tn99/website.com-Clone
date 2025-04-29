@@ -339,6 +339,15 @@
     box-shadow: 6px 11px 0px 2px black;
     overflow: hidden;
     width: 12rem;
+    /* pop up effects */
+    transform:translate(0,0px);
+    transition: 500ms;
+
+}
+
+#banner .content .product:hover{
+    box-shadow: 8px 13px 0px 2px black;
+    transform: translate(0, -20px);
 }
 
 #banner .content .product .name{
@@ -401,4 +410,8 @@
     img{
         height: 0.8rem;
     }
+}
+#banner .content .product .button:hover{
+    cursor: pointer;
+    background-color: #3598e9;
 }

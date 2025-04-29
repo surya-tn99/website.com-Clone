@@ -119,6 +119,14 @@
 }
 
 /*end of build it*/
+#faqs{
+    
+    /*
+    this background color is only temporary 
+    added to help the develpment of dremit div
+    */
+    background-color: #3598e9;
+}
 #faqs .content{
     margin: calc(var(--common-margin)*1.5) calc(var(--common-margin)*3) ;
 }

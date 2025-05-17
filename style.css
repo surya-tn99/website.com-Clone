@@ -415,3 +415,84 @@
     cursor: pointer;
     background-color: #3598e9;
 }
+
+/* end of banner */
+
+#dreamit{
+    padding: var(--common-margin);
+    background-color: rgba(221, 217, 217, 0.438);   
+}
+#dreamit .content .row{
+    display: grid;
+    grid-template-columns: 54% 35%;
+    justify-content: space-around;
+}
+#dreamit #dream-it-img{
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(images/dreamit-v2x.webp);
+    width: 85%;
+    margin: auto;
+    padding-top: 74.61%;
+    /* padding-top : 74.61%
+        this is to set the maintain the image height
+        original size 
+        width 1605
+        height 1198
+        padding-top = padding-top (%) = (1198 / 1605) * 100 ≈ 74.65%
+        (1198 / 1605) * 70 = 52.255%
+        */
+    position: relative;
+}
+#dreamit .content .col{
+    list-style: decimal !important;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#dreamit .content .title{
+    font-size: 2.9rem;
+    margin: auto auto 2.5rem 7rem;
+    text-transform: capitalize;
+}
+#dreamit .content .row .col .title{
+    font-size: 1.4rem;
+    margin:0 0 0.5rem 0;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    text-transform: none;
+    opacity:1;
+}
+#dreamit .content .row .col ol li p{
+    color: inherit;
+    opacity: 0.8;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+#dreamit .content .row .col ol{
+    margin: 0 90px 0 0;
+}
+#dreamit .content .row .col ol li{
+    margin-bottom: 20px;
+    list-style:none;
+}
+#dreamit .content .col .next-arrow-light-blue-img{
+    display: inline-block;
+    background-image: url(images/arrow-next-small-blue-like-colour-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 1.2rem;
+    width: 1.2rem;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+}
+
+#dreamit .content .row .col #dream-it-web-link a{
+    border-bottom: 3px dotted #016e8f;
+    text-decoration: none;
+    color: #016e8f;
+}
+
+/* end of dreamit */

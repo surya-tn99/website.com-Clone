@@ -418,25 +418,9 @@
 
 /* end of banner */
 
-#header , #footer{
-    
-    /*
-    this background color is only temporary 
-    added to help the develpment of dremit div
-    */
-    background-color: #3598e9;
-}
-#banner , #build-it ,#faqs ,#review ,#free-plan , #header, #footer{
-    display: none;
-}
-/* to identify the margin i adding 
-that the body color as violet */
-body{
-    background-color: violet !important;
-}
 #dreamit{
-    margin: var(--common-margin);
-    background-color: white;   
+    padding: var(--common-margin);
+    background-color: rgba(221, 217, 217, 0.438);   
 }
 #dreamit .content .row{
     display: grid;
@@ -465,7 +449,6 @@ body{
     list-style: decimal !important;
     vertical-align: middle;
     width: 100%;
-    border: 1px solid red;
 }
 
 #dreamit .content .title{
@@ -512,4 +495,4 @@ body{
     color: #016e8f;
 }
 
-
+/* end of dreamit */

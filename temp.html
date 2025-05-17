@@ -1,16 +1,51 @@
-<ol>
-    <li>
-        <p class="title">Start with a stunning theme</p>
-        <p>Our layouts make it simple to get started. Fresh designs make it easy to make a beautiful, responsive website for any industry.</p>
-    </li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            margin: 0;
+            padding: 0;
+        }
+        #google-logo{
+            background-color: orange;
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .row{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+        }
+        .col{
+            width: 100%;
+        }
+        #img{
+            background-color: orangered;
+        }
+        #para{
+            background-color: blueviolet;
+        }
 
-    <li>
-        <p class="title">Customize with your own content</p>
-        <p>Add and customize sections. Choose font pairings, add images, and customize with your own text to make your website your own.</p>
-    </li>
-    
-    <li style="list-style: decimal;">
-        <p class="title">Be found online</p>
-        <p>Grow your audience with your perfect domain name, SEO tools, social media and third party features.</p>
-    </li>
-</ol>
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div id="img" class="col">
+            <img id="google-logo" src="images/google-svgrepo-com.svg" alt="" srcset="">
+        </div>
+        <div id="para" class="col">
+            <ol>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+                <li>four</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

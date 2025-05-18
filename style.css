@@ -494,5 +494,138 @@
     text-decoration: none;
     color: #016e8f;
 }
-
 /* end of dreamit */
+
+#sitebody #template{
+    display: block  !important;
+    color: black;
+    background-color: rgba(221, 217, 217, 0.2);   
+}
+#sitebody #template .container{
+    /* font-size: 4rem; */
+    display: grid;
+    height: auto;
+    align-items: center;
+}        
+#sitebody #template .content #con1{
+    justify-content: center;
+    /* margin: var(--common-margin) ;
+    margin-bottom: 0; */
+}
+#sitebody #template #con1{
+    margin: var(--common-margin);
+    margin-bottom: 0;
+}
+
+#sitebody #template .content #con2,
+#sitebody #template .content #con4,
+#sitebody #template .content #con6 {
+    justify-items: left;
+}
+#sitebody #template .content{
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap: 5%;
+}
+#sitebody #template .content #con1 {
+    grid-column: 1 / 6;
+    /*
+    The above is the short hand method
+    grid-column-start: 1;
+    grid-column-end: 6; 
+    */
+}
+
+#sitebody #template .content #con2,
+#sitebody #template .content #con4,
+#sitebody #template .content #con6 {
+    grid-column: 1 / 4;
+}
+
+#sitebody #template .content #con3,
+#sitebody #template .content #con5,
+#sitebody #template .content #con7 {
+    grid-column: 4 / 6;
+}
+
+#sitebody #template .content .template-img,
+#sitebody #template .content .template-small-img{
+    padding-top:60%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#sitebody #template .content .template-small-img{
+    width: 35.5%;
+    padding-top: 65%;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 20px 50px rgb(163, 163, 163);
+    margin-bottom: 3%;
+    /* margin for alignment  */
+}
+
+#sitebody #template .content #con2 .template-img,
+#sitebody #template .content #con4 .template-img,
+#sitebody #template .content #con6 .template-img{
+    width: 80%;
+    padding-top: 50%;
+    margin-bottom: 0.5%;
+    /* margin for alignment  */
+}
+
+#sitebody #template .content #con2,
+#sitebody #template .content #con4,
+#sitebody #template .content #con6{
+    padding-left: 10%;
+}
+
+#con2 .template-img {
+    background-image: url(images/template-img-1.webp);
+}
+#con3 .template-small-img{
+    background-image: url(images/template-img-1a.webp);
+}
+#con4 .template-img {
+    background-image: url(images/template-img-2.webp);
+}
+#con5 .template-small-img{
+    background-image: url(images/template-img-2a.webp);
+}
+#con6 .template-img {
+    background-image: url(images/template-img-3.webp);
+}
+#con7 .template-small-img{
+    background-image: url(images/template-img-3a.webp);
+}
+/* till now i develop css code for images alignment and layout of template container.*/
+#sitebody #template .content #con1{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: black;
+}
+#sitebody #template .content #title{
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+#sitebody #template .content #info{
+    font-size: 1.25rem;
+}
+#sitebody #template .content .container .big-img-info,
+#sitebody #template .content .container .small-img-info{
+    margin-top: 1%;
+    line-height: 150%;
+    font-size: 1.09125rem;
+    opacity: 0.8;
+    margin-right: 10%
+}
+#sitebody #template .content .container .small-img-info{
+    margin-right: 10%;
+}
+/* to create an space between template div and the next container */
+#sitebody #template .content #con8{
+    grid-column: 1/6;
+    width: 100%;
+    padding-top: 25%;
+}

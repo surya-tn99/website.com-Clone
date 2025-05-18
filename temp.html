@@ -17,6 +17,10 @@
         #sitebody #template{
             display: block  !important;
             color: black;
+            margin: var(--common-margin);
+        }
+        #section{
+            margin:var(--common-margin);
         }
         #sitebody #template .container{
             /* font-size: 4rem; */
@@ -26,10 +30,9 @@
         }        
         #sitebody #template .content #con1{
             justify-content: center;
-            margin: var(--common-margin) ;
-            margin-bottom: 0;
+            /* margin: var(--common-margin) ;
+            margin-bottom: 0; */
         }
-        
         #sitebody #template .content #con2,
         #sitebody #template .content #con4,
         #sitebody #template .content #con6 {
@@ -134,7 +137,13 @@
             margin-right: 10%
         }
         #sitebody #template .content .container .small-img-info{
-            margin-right: 0%;
+            margin-right: 10%;
+        }
+        /* to create an space between template div and the next container */
+        #sitebody #template .content #con8{
+            grid-column: 1/6;
+            width: 100%;
+            padding-top: 30%;
         }
 
     </style>
@@ -146,43 +155,92 @@
         <div id="template" class="section">
             <div class="content">
             
-                <div class="container" id="con1" style="background-color: wheat;">
+                <div class="container" id="con1">
                     <h1 id="title">Beautiful websites for any goal.</h1>
                     <p id="info">Whatever the industry, make your online presence stand out.</p>
                 </div>
 
-                <div class="container" id="con2" style="background-color: red;">
+                <div class="container" id="con2">
                     <div class="template-img"></div>
                     <h1 class="big-img-title">Photographer Portfolios</h1>
                     <p class="big-img-info">Showcase your work online with professional layouts, engaging galleries, and simple contact forms.</p>
                 </div>
                 
-                <div class="container" id="con3" style="background-color: green;">
+                <div class="container" id="con3">
                     <div class="template-small-img"></div>
                     <h1 class="small-img-title">Life Coach Websites</h1>
                     <p class="small-img-info">Build client trust with a professional online presence. Add a blog, testimonials and forms. Optimize with third-party integrations.</p>
-                    
                 </div>
                 
-                <div class="container" id="con4" style="background-color: orange;">
+                <div class="container" id="con4">
                     <div class="template-img"></div>
                     <h1 class="big-img-title">Small Business Sites</h1>
                     <p class="big-img-info">55% of consumers search online before making a purchase. Create a professional website with the features you need to grow your business.</p>                    
                 </div>
                 
-                <div class="container" id="con5" style="background-color: violet;">
+                <div class="container" id="con5">
                     <div class="template-small-img"></div>
                     <h1 class="small-img-title">Online Stores</h1>
                     <p class="small-img-info">Get the tools you need to power your online store. Beautiful product galleries, diverse payment methods, member checkouts, and more.</p>
                 </div>
                 
-                <div class="container" id="con6" style="background-color: brown;">
+                <div class="container" id="con6">
                     <div class="template-img"></div>
                     <h1 class="big-img-title">Real Estate Websites</h1>
                     <p class="big-img-info">More than 51% of buyers find their homes online. Create your real estate website with engaging galleries and professional features to gain trust and enhance your sales.</p>
                 </div>
                 
-                <div class="container" id="con7" style="background-color: greenyellow;">
+                <div class="container" id="con7">
+                    <div class="template-small-img"></div>
+                    <h1 class="small-img-title">Therapy Sites</h1>
+                    <p class="small-img-info">Speak to your ideal client and express your therapy specialization with website designs loaded with industry-specific content.</p>
+                </div>
+
+                <div class="container" id="con8">
+                </div>
+                
+            </div> 
+        </div>
+
+        <div id="template" class="section">
+            <div class="content">
+            
+                <div class="container" id="con1">
+                    <h1 id="title">Beautiful websites for any goal.</h1>
+                    <p id="info">Whatever the industry, make your online presence stand out.</p>
+                </div>
+
+                <div class="container" id="con2">
+                    <div class="template-img"></div>
+                    <h1 class="big-img-title">Photographer Portfolios</h1>
+                    <p class="big-img-info">Showcase your work online with professional layouts, engaging galleries, and simple contact forms.</p>
+                </div>
+                
+                <div class="container" id="con3">
+                    <div class="template-small-img"></div>
+                    <h1 class="small-img-title">Life Coach Websites</h1>
+                    <p class="small-img-info">Build client trust with a professional online presence. Add a blog, testimonials and forms. Optimize with third-party integrations.</p>
+                </div>
+                
+                <div class="container" id="con4">
+                    <div class="template-img"></div>
+                    <h1 class="big-img-title">Small Business Sites</h1>
+                    <p class="big-img-info">55% of consumers search online before making a purchase. Create a professional website with the features you need to grow your business.</p>                    
+                </div>
+                
+                <div class="container" id="con5">
+                    <div class="template-small-img"></div>
+                    <h1 class="small-img-title">Online Stores</h1>
+                    <p class="small-img-info">Get the tools you need to power your online store. Beautiful product galleries, diverse payment methods, member checkouts, and more.</p>
+                </div>
+                
+                <div class="container" id="con6">
+                    <div class="template-img"></div>
+                    <h1 class="big-img-title">Real Estate Websites</h1>
+                    <p class="big-img-info">More than 51% of buyers find their homes online. Create your real estate website with engaging galleries and professional features to gain trust and enhance your sales.</p>
+                </div>
+                
+                <div class="container" id="con7">
                     <div class="template-small-img"></div>
                     <h1 class="small-img-title">Therapy Sites</h1>
                     <p class="small-img-info">Speak to your ideal client and express your therapy specialization with website designs loaded with industry-specific content.</p>

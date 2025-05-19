@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            font-size: 2rem;
+        }
+ 
+		.demo::before {
+            content: "(before text)";
+            color: red;
+            font-weight: bold;
+        }
+
+        .demo::after {
+            content: "(after text)";
+            color: red;
+            font-weight: bold;
+        }
+
+        .demo::first-letter {
+            color: blue;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .demo::first-line {
+            background-color: #eb99ff;
+        }
+
+        .demo::selection,
+        .demo *::selection {
+            background: #ffb7b7;
+            color: #0fda3b;
+        }
+
+		.custom-input::placeholder {
+            color: #a020f0;
+            font-style: italic;
+            opacity: 1;
+        }
+
+		ul.marker-demo li::marker {
+            color: #ff6600;
+            font-size: 1.5em;
+        }
+
+		input[type="file"]::file-selector-button {
+            background: #0fda3b;
+            color: #fff;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+		dialog::backdrop {
+            background: rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <p class="demo">This is a demo for pseudo-elements.
+        <br>
+        Select this text to see ::selection effect.
+    </p>
+
+    <h3>placeholder Example</h3>
+    <input class="custom-input" type="text" placeholder="Type something here...">
+
+    <h3>marker Example</h3>
+    <ul class="marker-demo">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+
+    <h3>file-selector-button Example</h3>
+    <input type="file">
+
+    <h3>backdrop Example</h3>
+    <button onclick="document.getElementById('myDialog').showModal()">Open Dialog</button>
+    <dialog id="myDialog">
+        <p>This is a dialog. Click outside or press ESC to close.</p>
+        <button onclick="document.getElementById('myDialog').close()">Close</button>
+    </dialog>
+</body>
+</html>

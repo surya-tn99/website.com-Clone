@@ -112,6 +112,7 @@
 .drop-col ul li{
     cursor: pointer;
     display: inline-block;
+    color: red;
 }
 .drop-menu:hover {
 
@@ -124,6 +125,9 @@
     .droplist-menu-title .arrow{
         rotate: -90deg;
     }
+}
+.drop-col ul li:hover{
+    text-decoration: underline;
 }
 
 /* end of header*/

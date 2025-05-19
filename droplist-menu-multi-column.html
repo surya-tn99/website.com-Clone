@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		.menu {
+			display: inline-block;
+			position: relative;
+		}
+
+		.menu-title {
+			font-size: 3rem;
+			padding: 8px 16px;
+			background: #eee;
+			cursor: pointer;
+		}
+
+		.dropdown {
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0%;
+			background: #fff;
+			border: 1px solid #ccc;
+			min-width: 120px;
+		}
+
+		.menu:hover .dropdown {
+			display: block;
+		}
+
+		.dropdown-list {
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		.dropdown-col {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="menu">
+		<div class="menu-title">Menu</div>
+		<div class="dropdown">
+			<div class="dropdown-list">
+				<div class="dropdown-col">
+					<div>1</div>
+					<div>2</div>
+					<div>3</div>
+					<div>4</div>
+				</div>
+				<div class="dropdown-col">
+					<div>5</div>
+					<div>6</div>
+					<div>7</div>
+					<div>8</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+
+</html>

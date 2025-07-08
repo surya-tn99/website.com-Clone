@@ -1,4 +1,6 @@
 
 ### CREATED AN CLONE WEBITE 
  
-🔗 website [HOSTING LINK](https://beta-surya.github.io/CLONE-website.com/)
+🔗 website [HOSTING LINK](https://surya-tn99.github.io/website.com-Clone/)
+
+_**Desktop view is developed**_
